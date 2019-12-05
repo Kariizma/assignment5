@@ -7,6 +7,7 @@ import com.csci38004.assignment5.data.model.CategoryIcon;
 import com.csci38004.assignment5.data.model.CategoryItem;
 import com.csci38004.assignment5.presentation.model.PresentationCategory;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -51,6 +52,7 @@ public class GetCategoriesTaskTest {
         // When we have an unsuccessful response, we expect an empty list.
 
         // Assert that the list above is empty.
+        Assert.assertEquals(presentationCategories.size(),0);
     }
 
     @Test
@@ -66,6 +68,7 @@ public class GetCategoriesTaskTest {
         // When we have a successful response, but with no category items, we expect an empty list.
 
         // Assert that the list above is empty.
+        Assert.assertEquals(presentationCategories.size(),0);
     }
 
     @Test
@@ -96,6 +99,10 @@ public class GetCategoriesTaskTest {
         //      - the list above is has one item
         //      - the one item's getName() method returns a String equal to "name"
         //      - the one item's getImageUrl() method returns a String equal to "url"
+
+        Assert.assertEquals(presentationCategories.size(),1);
+        Assert.assertEquals(presentationCategories.get(0).getName(),"name");
+        Assert.assertEquals(presentationCategories.get(0).getImageUrl(),"url");
     }
 
 }

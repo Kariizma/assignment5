@@ -33,5 +33,6 @@ public class CategoryItemUtilTest {
 
         // Assert that {@link CategoryItemUtil#getRandomCategoryIconUrl(CategoryItem)} returns a
         // String equal to "url" when passing the above {@link CategoryItem}, which has one icon.
+        assertEquals("url",CategoryItemUtil.getRandomCategoryIconUrl(item));
     }
 }
