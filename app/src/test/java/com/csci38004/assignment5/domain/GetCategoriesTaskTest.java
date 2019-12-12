@@ -68,7 +68,7 @@ public class GetCategoriesTaskTest {
         // When we have a successful response, but with no category items, we expect an empty list.
 
         // Assert that the list above is empty.
-        Assert.assertEquals(presentationCategories.size(),0);
+        Assert.assertEquals(presentationCategories.isEmpty(),true);
     }
 
     @Test
