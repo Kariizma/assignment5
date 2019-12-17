@@ -31,3 +31,10 @@
 
 # Part 3 - GetCategoriesTaskTest - 45%
 + Update the three test methods as described in their comments. The first two methods should just need one assertion each, while the last one requires three assertions.
+
+# Final grade
++ Part 0: 15%
++ Part 1: 15%
++ Part 2: 25%
++ Part 3: 45%
++ Total: 100%
